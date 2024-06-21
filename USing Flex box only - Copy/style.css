@@ -1,0 +1,179 @@
+*{
+  padding: 0;
+  margin: 0;
+box-sizing: border-box;
+
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.nav{
+  background-color: rgb(0, 128, 0);
+  padding: 1rem;
+  display: flex; 
+  justify-content: space-around;
+
+}
+.onelist li{
+font-size: 20px;
+color: rgb(255, 255, 255);
+display: flex;
+}
+.onelist ul{
+  display: flex;
+  gap: 20px;
+}
+.side ul{
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+
+
+}
+.side ul li{
+  list-style: none;
+  
+}
+.side ul li i{
+  color: white;
+}
+
+.menu{
+  background-color: rgb(247, 247, 247);
+  padding: 10px 0;
+  
+ 
+}
+.menu ul{
+  display: flex;
+  gap: 30px;
+  margin-left: 15px;
+  justify-content: center;
+}
+.menu ul li{
+  color: rgb(177, 171, 171);
+  cursor: pointer;
+  
+}
+.menu ul li:hover{
+  color: green;
+}
+#main{
+ height: 90%;
+ width: 100%;
+ background-image: url(./img/house-5017489_1280.jpg);
+ background-size: cover;
+}
+.main-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  padding: 30px;
+  
+}
+.ri-menu-3-line{
+  display: none;
+}
+.ri-close-line{
+  display: none;
+}
+.main-plot{
+  display: flex;
+  justify-content: space-around;
+}
+.plot1{
+height: 200px;
+width: 200px;
+border-radius: 20px;
+background-color: yellow;
+
+}
+.plot2{
+height: 200px;
+width: 200px;
+border-radius: 20px;
+background-color: green;
+
+}
+.plot3{
+height: 200px;
+width: 200px;
+border-radius: 20px;
+background-color: skyblue;
+}
+.plot4{
+height: 200px;
+width: 200px;
+border-radius: 20px;
+background-color: #FAB0A2;
+}
+.main-plot2{
+  display: flex;
+  justify-content: space-around;
+}
+.p1{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px; background-color: rgb(126, 216, 170);
+  
+}
+.p2{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: rgb(109, 127, 190);
+}
+.p3{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: rgb(122, 208, 201);
+  
+}
+.p4{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: rgb(135, 117, 173);
+  
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 890px){
+  .onelist {
+    display: none;
+  }
+  .side{
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+ 
+  .ri-menu-3-line{
+       display: block;
+       font-size: 30px;
+       color: white;
+  }
+ 
+}
+@media only screen and (max-width: 495px){
+  .main-plot{
+flex-direction: column;
+
+align-items: center;
+  }
+  .main-plot2{
+flex-direction: column;
+
+align-items: center;
+  }
+}

@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(57, 52, 52);
+}
+.fb{
+    height: 400px;
+    width: 400px;
+    border: 2px solid rgb(68, 56, 173);
+    box-shadow: 3px 3px 30px aqua;
+   overflow-y: hidden;
+   
+}
+.photo{
+    height: 300px;
+    width: 500px;
+
+}
+.Stranger{
+    text-align: center;
+    overflow-y: hidden;
+    color: grey;
+}
+.Connect{
+    padding: 8px;
+    background-color: blue;
+    color: white;
+   position: relative;
+   left: 38%;
+   border-radius: 30px;
+ 
+bottom: 1.5%;
+}
+.linkedin{
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+#Go:hover{
+    box-shadow: 2px 2px 30px rgb(218, 149, 59);
+}

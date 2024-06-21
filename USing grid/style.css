@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family:Open+Sans ;
+
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+
+}
+
+.header{
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+}
+.nav-list{
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+  margin-top: 5px;
+
+}
+.nav-link{
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+
+}
+.logo{
+  color: rgb(15, 15, 15);
+}
+#mobile-icon{
+font-size: 1.5rem;
+}
+.mobile-nav{
+  margin-top: 5px;
+ display: none;
+}
+#mobile-icon-close{
+display: none;
+  font-size: 1.5rem;
+}
+.nav-link{
+  text-decoration: none;
+}
+
+@media screen and (max-width:980px) {
+  
+  .mobile-nav{
+display: block;
+z-index: 999;
+border: 3px solid black;
+cursor: pointer;
+
+  }
+  .navbar{
+    
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(252, 246, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+   
+    opacity: 0;
+visibility: hidden;
+pointer-events: none;
+  }
+  .nav-list{
+    flex-direction: column;
+    align-items: center;
+  }
+  .header{
+    position: relative;
+  }
+
+  .active .navbar{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+    transition: all 0.5s linear;
+   
+  }
+  .active .mobile-nav #mobile-icon-close{
+    display: block;
+  }
+  .active .mobile-nav #mobile-icon{
+    display: none;
+  }
+  }
+  .surprise:hover{
+    animation-name: surprise;
+        -webkit-animation-name: surprise;
+        -moz-animation-name: surprise;
+    animation-duration: .8s;
+        -webkit-animation-duration: .8s;
+        -moz-animation-duration: .8s;
+}
+
+    @keyframes surprise
+    {
+        0% {transform: rotate(0deg) scale(1,1);;}
+        10% {transform: rotate(7deg) scale(2,2);}
+        20% {transform: rotate(-7deg) scale(2,2);}
+        30% {transform: rotate(7deg) scale(2,2);}
+        40% {transform: rotate(-7deg) scale(2,2);}
+        50% {transform: rotate(7deg) scale(2,2);}
+        60% {transform: rotate(-7deg) scale(2,2);}
+        70% {transform: rotate(7deg) scale(2,2);}
+        80% {transform: rotate(-7deg) scale(2,2);}
+        90% {transform: rotate(7deg) scale(2,2);}
+        100% {transform: rotate(0deg) scale(1,1);}
+    }
+              
+            
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(400px, 600px));
+    grid-template-rows: 400px;
+    margin-top: 15px;
+    padding: 10px;
+    justify-content: center;
+
+   
+  }
+.profile1{
+  /* background-color: aqua; */
+}
+.profile2{  
+  /* background-color: rgb(72, 95, 95); */
+}
+.job-container{
+display: grid;
+grid-template-columns: repeat(4,minmax(150px,200px));
+grid-template-rows: repeat(2,minmax(100px,200px));
+justify-content: center;
+grid-gap: 40px;
+}
+.job1{
+ 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  margin: 10px 0px;
+}
+.job2{
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px;
+}
+.job3{
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px;
+}
+.job4{
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px;
+}
+.job5{
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px;
+}
+.job6{
+ 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px;
+}
+.job7{
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px;
+}
+.job8{
+  
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px;
+}
+.job9{
+ 
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px 0px;
+}
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:980px) {
+  .container{
+    
+    grid-template-columns: repeat(auto-fill,minmax(400px, 600px));
+    grid-row-gap: 30px;
+  }
+  .job-container{
+   
+    grid-template-columns: repeat(auto-fill,minmax(150px,200px));
+    
+    }
+
+}

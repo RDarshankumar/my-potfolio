@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singular to Plural Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:blue;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Singular to Plural Converter</h1>
+        <input type="text" id="nounInput" placeholder="Enter a singular noun">
+        <button onclick="convert()">Convert</button>
+        <div id="result"></div>
+
+        
+    </div>
+
+    <a href="../index.html"><button>Go Back</button></a>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="aboutus" style="background-color: black;color: white; height: 200px;">
+        <h2 style="text-align: center;">About Us</h2>
+        
+        <p><p>Welcome to the AI Innovations API. Our API offers a range of artificial intelligence
+            services that enable developers to integrate powerful AI capabilities into their applications. Our
+            team consists of highly qualified coding experts, freshly
+            passed out from batch 1601 of Web Development - I program at Bano Qabil 2.0. Immersed in the sea of
+            knowledge, provided by Sir Adil Ahmed Shaikhani, for learning JavaScript (alongwith HTML & CSS), we
+            are out for coding. In case of any query, learning or designing projects, contact us. We are at your
+            service!</p>
+            </p>
+    </div>
+
+    <script>
+        function convert() {
+            const noun = document.getElementById('nounInput').value.trim();
+            if (noun === '') {
+                alert('Please enter a singular noun.');
+                return;
+            }
+
+            const plural = getPlural(noun);
+            document.getElementById('result').innerText = `Plural: ${plural}`;
+        }
+
+        function getPlural(noun) {
+            
+            if (noun.endsWith('s') || noun.endsWith('x') || noun.endsWith('z') || noun.endsWith('ch') || noun.endsWith('sh')) {
+                return noun + 'es';
+            } else if (noun.endsWith('y')) {
+                return noun.slice(0, -1) + 'ies';
+            } else {
+                return noun + 's';
+            }
+        }
+    </script>
+</body>
+</html>

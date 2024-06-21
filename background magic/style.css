@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.One{
+    background-color: rgb(252, 252, 252);
+    height: 100%;
+    width: 100%;
+}
+.two{
+    background-color:rgb(252, 252, 252);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+
+    
+}
+.three{ background-color: rgb(252, 252, 252); height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.four{
+    background-color: rgb(252, 252, 252);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.five{ background-color:rgb(252, 252, 252);
+    height: 100%;
+    width: 100%;
+}
+
+.heading{
+    position: relative;
+    top: 50%;
+    left: 2%;
+    text-shadow: 1px 1px 10px gray;
+   font-size: 3vw;
+    font-weight: 700;
+
+}
+p{
+    position: relative;
+    top: 52%;
+    left: 1%;
+    font-size: 1vw;
+    text-shadow: 1px 1px 2px grey ;
+}
+#link:hover{
+    border-bottom: 4px solid aqua;
+    transition: all 0.2s ;
+}
+
+
+#im{
+    background-size: cover;
+    height: 350px ;
+    width: 350px;
+    
+    object-fit: cover;
+    top: 2px;
+    position: relative;
+    left: 65%;
+    top: -10%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px aqua;
+    
+    
+}
+
+
+
+
+    
+
+.skill{
+    
+    height: 500px;
+    width: 80%;
+    position: relative;
+    top: 15%;
+    left: 5%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.fb{
+    height: 400px;
+    width: 400px;
+    border: 2px solid rgb(68, 56, 173);
+    box-shadow: 3px 3px 30px aqua;
+   overflow-y: hidden;
+   
+}
+.photo{
+    height: 300px;
+    width: 500px;
+
+}
+.Stranger{
+    text-align: center;
+    overflow-y: hidden;
+    color: grey;
+}
+.Connect{
+    padding: 8px;
+    background-color: blue;
+    color: white;
+   position: relative;
+   left: 38%;
+   border-radius: 30px;
+ 
+bottom: 1.5%;
+}
+
+.Key{
+ display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.in{
+    width: 800px;
+    height: 45px;
+    box-shadow: 3px 3px 50px aqua;
+}
+   
+.about{
+    height: 60%;
+    width: 80%;
+    border: 1px solid black;
+    position: relative;
+    left: 8%;
+    top: 20%;
+    box-shadow: 5px 5px 30px aqua;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-shadow: 2px 2px 4px black;
+    
+}
+.about h5{
+    overflow-y: hidden;
+    position: relative;
+    left: 3%;
+    bottom: 4%;
+}
+.six{
+    height: 100%;
+    width: 100%;
+
+}
+
